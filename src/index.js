@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Header from './Header';
 import reportWebVitals from './reportWebVitals';
+import Dynamic from './Dynamic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,6 +18,7 @@ root.render(
   <> 
   <App />
   <Header />
+  <Dynamic />
   </>
 );
 
