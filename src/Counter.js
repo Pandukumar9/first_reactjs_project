@@ -8,6 +8,7 @@ function Counter() {
     return(
         <div className="wrapper">
             <h2>Counter app in reactjs</h2>
+            <button className='btn btn-primary'>test</button>
            <button className='minus' disabled={counterr === 0} onClick={() => {
               if(counterr > 0){
                 setCounter(counterr - 1);

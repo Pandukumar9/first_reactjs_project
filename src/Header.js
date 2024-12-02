@@ -3,6 +3,7 @@ import './Header.css';
 import User from './User';
 import Testprops from './Testprops';
 import Counter from './Counter';
+import Destructprops from './Destructprops';
 
 let inStyle = {
     color: 'pink',
@@ -14,6 +15,13 @@ let users = [
     { id:2 , name:'laddu' , age:32 ,place:'hnk'},
     { id:3 , name:'madhu' , age:32 ,place:'hyderabad'},
 ]
+
+let prod1 = {
+    id : 1,
+    name: "lenovo l134",
+    actprice:13000,
+    dprice:10000
+}
 
 function Header() {
         // Define a function to handle button click
@@ -57,6 +65,10 @@ function Header() {
           </Testprops>
 
           <Counter></Counter>
+
+          {/* <Destructprops id={prod1.id} name={prod1.name} actprice={prod1.actprice} dprice={prod1.dprice}/> */}
+          {/* or */}
+          <Destructprops {...prod1}/>
         </>
     )
             //  <User name='pandukumar' age="25"/>
